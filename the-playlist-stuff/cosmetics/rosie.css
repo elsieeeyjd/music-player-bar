@@ -1,0 +1,149 @@
+/* an alternative look to your player that's rosey pink */
+
+.player {
+  position: fixed; inset: 0 auto auto 0;
+  height: var(--bar-h); width: 100%;
+  display: grid; 
+  grid-template-columns: auto auto auto auto auto 1fr auto auto;
+  align-items: center; gap: .75rem;
+  padding: 0 .75rem;
+  background: #EADDE1; 
+  color: #bca3ac;
+  z-index: 9999; 
+  box-shadow: 0 2px 8px rgba(0,0,0,.15);
+  font: 500 14px/1 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+.player button {
+  all: unset; 
+  background: transparent; 
+  border: 0;
+  color: #bca3ac;
+  font-size: 1.25rem;
+  padding: .25rem .5rem;
+  cursor: url('https://elsieeeyjd.github.io/elswhere-neocities/cursor/p-angel-heart/link-select.png'), pointer;
+}
+
+.track {
+  display: grid; 
+  gap: .25rem;
+}
+
+.title-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.title-wrap::before, .title-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0; width: 24px; height: 100%;
+}
+
+.title-wrap::before{ left:0;  background:linear-gradient(to right, var(--bg), transparent); }
+.title-wrap::after { right:0; background:linear-gradient(to left,  var(--bg), transparent); }
+
+
+.title {
+  display: inline-block;
+  white-space: nowrap;
+  padding-inline: 8px;
+  will-change: transform; 
+}
+
+.title.scroll{
+  animation: marquee var(--duration, 12s) linear infinite;
+}
+@keyframes marquee{
+  from{ transform: translateX(0); }
+  to  { transform: translateX(calc(-1 * var(--scroll-distance, 50%))); }
+}
+
+.progress {
+  height: 6px;
+  width: 100%;
+  background: #F3EAF4;
+  border-radius: 999px; 
+  cursor: url('https://elsieeeyjd.github.io/elswhere-neocities/cursor/p-angel-heart/link-select.png'), pointer;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: #BCA3AC;
+  border-radius: inherit; 
+}
+
+.time{
+  display:flex;
+  justify-content:space-between;
+  font-size:12px;
+  line-height:1;
+  opacity:.9;
+  color: #BCA3AC;
+  margin-top: 2px;
+  font-variant-numeric: tabular-nums; /* keeps numbers from jittering */
+}
+
+.playlist{
+  position: absolute;
+  top: 56px;
+  right: 8px;
+  left: auto;
+  width: min(520px, 90vw);
+  max-height: 40vh;
+  overflow: auto;
+  background: #BCA3AC;                 /* your sidebar color */
+  color: #E9E8FF;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.18);
+  padding: 6px;
+  z-index: 10000;
+  transform-origin: 12px top;
+  transition: opacity .15s ease, transform .15s ease;
+  opacity: 0; 
+  transform: scale(1);
+}
+
+.playlist[aria-open="true"]{
+  opacity: 1; transform: scale(1);
+}
+
+/* each track row */
+.playlist_item{
+  display: grid;
+  grid-template-columns: 1fr auto;     /* title | duration (optional later) */
+  align-items: center;
+  gap: .5rem;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.playlist_item[aria-selected="true"]::after{
+  content:"now playing..."; 
+  margin-right:.5rem; 
+  color:#bca3ac; 
+  font-size: 10px;
+  opacity:.9;
+}
+
+.playlist_item:hover,
+.playlist_item[aria-selected="true"]{
+  background: rgba(233,232,255,.18);
+}
+.playlist_title{
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+.playlist_item { grid-template-columns: 1fr auto; }
+
+.playlist_dur { font-size:12px; opacity:.8; }
+
+#volume {
+  width: 100px;
+
+}

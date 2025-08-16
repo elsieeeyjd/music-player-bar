@@ -7,7 +7,7 @@ This is a lil widget you can add on your personal site -- a music player at the 
 
 this project originated as me wanting to use the wikiplayer widget on my neocities site but it refused to play for whatever reason. So i decided to build my own! see this player in action @ <a href="https://elswhere.neocities.org/">elswhere.neocities.org</a>
 
-<b>DISCLAIMER:</b> as I'm still a newbie at javascript, and this is kinda a 'practice' project, I did use AI on few occasions for debugging (and sanity preservation) purposes. But I do handcode most parts of the project. All logic/design of the player is mine, and I personally reviewed all AI inputs. But if you are a strict no AI no matter what person, I apologise. And fyi, I am actively trying to learn js so I can use less and less AI in the future. 
+<b>DISCLAIMER:</b> as I'm still a newbie at javascript, and this is kinda a 'practice' project, I did use AI on few occasions for debugging (and sanity preservation) purposes. But I do handcode most parts of the project. All logic/design of the player is mine, and I personally reviewed all AI inputs. And fyi, I am actively trying to learn js so I can use less and less AI in the future. 
 
 <b>a note on music ownership/copyright:</b> don't use any copyrighted music on the player, especially since this player doesnt use offical embeds like youtube or spotify. No, a disclaimer doesn't make it better. There are plenty of good royalty free music out there (check the player on my site for example!). I just dont want anyone to have their site suspended cuz of this lol. 
 

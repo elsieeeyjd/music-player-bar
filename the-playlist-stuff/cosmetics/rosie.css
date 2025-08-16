@@ -83,7 +83,7 @@
   opacity:.9;
   color: #BCA3AC;
   margin-top: 2px;
-  font-variant-numeric: tabular-nums; /* keeps numbers from jittering */
+  font-variant-numeric: tabular-nums;
 }
 
 .playlist{
@@ -94,7 +94,7 @@
   width: min(520px, 90vw);
   max-height: 40vh;
   overflow: auto;
-  background: #BCA3AC;                 /* your sidebar color */
+  background: #BCA3AC;
   color: #E9E8FF;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0,0,0,.18);
@@ -113,7 +113,7 @@
 /* each track row */
 .playlist_item{
   display: grid;
-  grid-template-columns: 1fr auto;     /* title | duration (optional later) */
+  grid-template-columns: 1fr auto;
   align-items: center;
   gap: .5rem;
   padding: 8px 10px;

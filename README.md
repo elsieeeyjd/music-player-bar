@@ -17,7 +17,7 @@ This was initially designed for neocities free version, but i reckon you can als
 
 # how to use
 1. Download the script.js file and style.css, or copy paste the content into whatever script/css file you have.
-2. add the below html code right below your `<body` tag on your index.html of the page you want to have the player
+2. add the below html code right below your `<body>` tag on your index.html of the page you want to have the player
 ```
 <div class="player" id="player"></div>
 <audio id="audio" preload="metadata"></audio>

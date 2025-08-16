@@ -84,7 +84,7 @@ atp i've realized that the emoji ive used as the button for the playlist kinda b
   opacity:.9;
   color: #F1DAC4;
   margin-top: 2px;
-  font-variant-numeric: tabular-nums; /* keeps numbers from jittering */
+  font-variant-numeric: tabular-nums; 
 }
 
 .playlist{
@@ -95,7 +95,7 @@ atp i've realized that the emoji ive used as the button for the playlist kinda b
   width: min(520px, 90vw);
   max-height: 40vh;
   overflow: auto;
-  background: #0D0C1D;                 /* your sidebar color */
+  background: #0D0C1D;
   color: #F1DAC4;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0,0,0,.18);
@@ -114,7 +114,7 @@ atp i've realized that the emoji ive used as the button for the playlist kinda b
 /* each track row */
 .playlist_item{
   display: grid;
-  grid-template-columns: 1fr auto;     /* title | duration (optional later) */
+  grid-template-columns: 1fr auto;
   align-items: center;
   gap: .5rem;
   padding: 8px 10px;

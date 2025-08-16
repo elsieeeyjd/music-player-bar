@@ -1,4 +1,4 @@
-# music-player-bar
+# lil music player bar thing
 
 <img width="1264" height="53" alt="Screenshot 2025-08-17 at 1 57 15 AM" src="https://github.com/user-attachments/assets/3dcc09e1-32cf-41d5-a221-b23ccd420688" />
 
@@ -36,7 +36,8 @@ The playlist's default look is lilac. In case that's not your cup of tea, you ca
 but if you can't be bothered, I also have a few presets that may interest you <a href = "the-playlist-stuff/cosmetics"> here </a>
 
 <b>Greenery 🍀</b>
-photo tbd
+<img width="1266" height="55" alt="Screenshot 2025-08-17 at 2 01 23 AM" src="https://github.com/user-attachments/assets/d4fb1459-99b4-4f6a-9d8e-edaf018cdaa0" />
+
 
 <b>Rosie 🌹</b>
 <img width="1267" height="56" alt="Screenshot 2025-08-17 at 1 52 13 AM" src="https://github.com/user-attachments/assets/82c8d002-c74e-4942-96a5-4aa32d44a198" />

@@ -28,9 +28,10 @@ like so
 # making things pretty 
 The playlist's default look is lilac. In case that's not your cup of tea, you can customize directly from style.css! 
 
-but if you can't be bothered, I also have a few presets that may interest you 
+but if you can't be bothered, I also have a few presets that may interest you <a href = "the-playlist-stuff/cosmetics"> here </a>
 
-#lisence
+# lisence
+
 MIT License - Copyright (c) 2025 elsieee.
 
 

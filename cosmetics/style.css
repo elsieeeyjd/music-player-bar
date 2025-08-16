@@ -1,0 +1,146 @@
+
+/* rule of thumb is to not change anything that says 'grid' or 'flex' if you wanna keep the current layout of the playlist */
+
+.player {
+  position: fixed; inset: 0 auto auto 0;
+  height: 56px; width: 100%; 
+  display: grid; 
+  grid-template-columns: auto auto auto auto auto 1fr auto auto; /*<-- it will break if you change this proceed at your own risk */
+  align-items: center; gap: .75rem;
+  padding: 0 .75rem;
+  background: #666699; /*<-- change player background color here */
+  color: #f8f4ff; /*<-- change font color here */
+  z-index: 9999; box-shadow: 0 2px 8px rgba(0,0,0,.15); /*<-- if you dont want shadow under your player just delete this line */
+  font: 500 14px/1 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; /*<-- change fonts here */
+}
+
+.player button {
+  all: unset; 
+  background: transparent; 
+  border: 0;
+  color: #f8f4ff;
+  font-size: 1.25rem;
+  padding: .25rem .5rem;
+  cursor: pointer; /*<-- if you use any custom cursor for your site, change here for consistency */
+}
+
+.track {
+  display: grid; /*<-- it might break if you change this */
+  gap: .25rem;
+}
+
+.title-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.title-wrap::before, .title-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0; width: 24px; height: 100%;
+}
+
+.title-wrap::before{ left:0;  background:linear-gradient(to right, var(--bg), transparent); }
+.title-wrap::after { right:0; background:linear-gradient(to left,  var(--bg), transparent); }
+
+
+.title {
+  display: inline-block;
+  white-space: nowrap;
+  padding-inline: 8px;
+  will-change: transform; 
+}
+
+.title.scroll{
+  animation: marquee var(--duration, 12s) linear infinite;
+}
+@keyframes marquee{
+  from{ transform: translateX(0); }
+  to  { transform: translateX(calc(-1 * var(--scroll-distance, 50%))); }
+}
+
+.progress {
+  height: 6px;
+  width: 100%;
+  background: #E9E8FF; /*<-- the "background" of your progress bad, not the progress bar itself */
+  border-radius: 999px; /*<-- delete this if you want a rectangular progress bar (ew) */
+  cursor: pointer; /*<-- again, if you use custom cursors, change here */
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: #acace6; /*<-- now this is the actual progress bar that moves */
+  border-radius: inherit; 
+}
+
+.time{
+  display:flex;
+  justify-content:space-between;
+  font-size:12px;
+  line-height:1;
+  opacity:.9;
+  color: e9e8ff;
+  margin-top: 2px;
+  font-variant-numeric: tabular-nums; /* keeps numbers from jittering */
+}
+
+.playlist{
+  position: absolute;
+  top: 56px;
+  right: 8px;
+  left: auto;
+  width: min(520px, 90vw);
+  max-height: 40vh;
+  overflow: auto;
+  background: #8483c4;                 /* playlist sidebar color */
+  color: #e9e8ff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.18);
+  padding: 6px;
+  z-index: 10000;
+  transform-origin: 12px top;
+  transition: opacity .15s ease, transform .15s ease; 
+  opacity: 0; 
+  transform: scale(1);
+}
+
+.playlist[aria-open="true"]{
+  opacity: 1; transform: scale(1); 
+}
+
+/* each track row */
+.playlist_item{
+  display: grid;
+  grid-template-columns: 1fr auto;    
+  align-items: center;
+  gap: .5rem;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.playlist_item[aria-selected="true"]::after{ /* the color of the currently listening song in the playlist */
+  content:"now playing..."; 
+  margin-right:.5rem; 
+  color:#e9e8ff; 
+  font-size: 10px;
+  opacity:.9;
+}
+
+.playlist_item:hover,
+.playlist_item[aria-selected="true"]{ /* the color change when you hover over a song on the playlist */
+  background: rgba(233,232,255,.18);
+}
+.playlist_title{
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+.playlist_item { grid-template-columns: 1fr auto; }
+
+.playlist_dur { font-size:12px; opacity:.8; }
+
+#volume {width: 100px;}

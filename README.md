@@ -30,7 +30,14 @@ like so
 
 <b>IMPORTANT:</b> Since we're not using any official embeds to play our music, make sure the music you have is royalty free and/or you have lisence to said music. 
 
-4. from this point forward you can pretty much just follow the intructions provided in playlist.json to add music to your playlist, and you're good to go.
+4. to add songs to your playlist, edit playlist.json and fill out the info to your song accordingly. Copy and paste the rows to add more songs (remember commas!)
+
+to add songs to your playlist, just copy and paste the rows and fill out the info!
+
+<b>NOTE:</b> Neocities free v.s. paid -- how to host audio files
+
+If you have neocities supporter/if your web host allow you host mp3 (idk if nekoweb does but yeah), the "src" part can just be a direct path to said mp3 file. 
+However, if you're using neocities free/if your web host doesn't allow you to host mp3 files, you can just link it from other file hosting services like github (what i'm using) or catbox.moe, and paste the url. 
 
 # making things pretty 
 The playlist's default look is lilac. In case that's not your cup of tea, you can customize directly from style.css! 

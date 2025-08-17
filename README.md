@@ -16,7 +16,7 @@ this project originated as me wanting to use the wikiplayer widget on my neociti
 This was initially designed for neocities free version, but i reckon you can also use it on neocities supporters (duh), neko web, or other personal website host as long as you can edit the html, css, and js. 
 
 # how to use
-1. Download the script.js file and style.css, or copy paste the content into whatever script/css file you have.
+1. Fork the repo/Download the script.js file and style.css, or copy paste the content into whatever script/css file you have.
 2. add the below html code right below your `<body>` tag on your index.html of the page you want to have the player
 ```
 <div class="player" id="player"></div>

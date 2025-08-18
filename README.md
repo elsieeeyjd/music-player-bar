@@ -28,7 +28,7 @@ like so
 
 3. Download playlist.json, and the mp3 files of whatever music you want to have in your player
 
-<b>IMPORTANT:</b> Since we're not using any official embeds to play our music, make sure the music you have is royalty free and/or you have lisence to said music. 
+<b>IMPORTANT:</b> Since we're not using any official embeds to play our music, make sure the music you have is royalty free and/or you have lisense to said music. 
 
 4. to add songs to your playlist, edit playlist.json and fill out the info to your song accordingly. Copy and paste the rows to add more songs (remember commas!)
 
@@ -61,7 +61,7 @@ but if you can't be bothered, I also have a few presets that may interest you <a
 <img width="1265" height="55" alt="Screenshot 2025-08-17 at 1 51 49 AM" src="https://github.com/user-attachments/assets/21b7e75d-9973-429d-81c5-083d29acd0a8" />
 
 
-# lisence
+# lisense
 
 MIT License - Copyright (c) 2025 elsieee.
 

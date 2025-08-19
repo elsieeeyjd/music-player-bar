@@ -19,7 +19,7 @@ this project originated as me wanting to use the wikiplayer widget on my neociti
 This was initially designed for neocities free version, but i reckon you can also use it on neocities supporters (duh), neko web, or other personal website host as long as you can edit the html, css, and js. 
 
 # how to use
-1. Fork the repo/Download the script.js file and style.css <a href="the-playlist-stuff">here</a>, or copy paste the content into whatever script/css file you have.
+1. Download the newest release files <a href="https://github.com/elsieeeyjd/music-player-bar/releases/tag/v1.0.0">HERE</b>
 2. add the below html code right below your `<body>` tag on your index.html of the page you want to have the player
 ```
 <div class="player" id="player"></div>
@@ -29,7 +29,7 @@ This was initially designed for neocities free version, but i reckon you can als
 
 like so 
 
-3. Download playlist.json, and the mp3 files of whatever music you want to have in your player
+3. Download the mp3 files of whatever music you want to have in your player. If you're on neocities free, see the note below. 
 
 <b>IMPORTANT:</b> Since we're not using any official embeds to play our music, make sure the music you have is royalty free and/or you have lisense to said music. 
 

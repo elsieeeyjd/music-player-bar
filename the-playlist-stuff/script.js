@@ -1,3 +1,9 @@
+//this widget is created in 2025 by elsie
+//check out my website at elswhere.neocities.org
+//released under the MIT lisence
+
+
+//actual code below
 //inject html
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -33,14 +39,16 @@ const playerHTML = `
 
           <input id="volume" type="range" min="0" max="1" step="0.01" value="0.5" aria-label="Volume">`;
 
-function mountPlayer() {
+function mountPlayer(opts={}) {
   const root = document.getElementById("player");
   if (!root) return; // page without a player
   root.innerHTML = playerHTML;
 }
 
-function initPlayerUI() {
+function initPlayerUI(opts={}) {
 
+  showConsoleCredit(opts);
+  
   let path = window.location.pathname;
 
   let rootPath = "";
@@ -477,6 +485,7 @@ const saveState = throttle(() => {
     btnRepeat.textContent = repeat === "one" ? "🔂" : "🔁";
     btnRepeat.style.opacity = repeat === "off" ? ".5" : "1";
   });
+  
 } //end of initPlayerUI
 
 
@@ -492,6 +501,32 @@ function throttle (fn, ms) {
     }
   }
 }
+
+//don't change the section below or else i will b really sad ------
+
+function showConsoleCredit(opts = {}) {
+  // allow turning it off: init({ credit:false })
+  if (opts.credit === false) return;
+
+  // avoid duplicates (per page load)
+  if (window.__lilacCreditShown) return;
+  window.__lilacCreditShown = true;
+
+
+  const NAME = "elsie's music player widget";
+  const VERSION = '1.0.0';
+  const URL = 'https://github.com/elsieeeyjd/music-player-bar';
+
+  const credStart = "this lovely site uses: ";
+  const tag   = `${NAME} v${VERSION} `;
+  const style = 'background:#8b5cf6;color:#fff;padding:2px 8px;border-radius:8px;font-weight:600';
+  const msg   = `by elsie — MIT — ${URL}`;
+
+  console.info(`${credStart}%c${tag}%c ${msg} ${URL}`, style, '');
+}
+
+
+//------------------
 
 const STORAGE_KEY = 'elsiePlayer';
 

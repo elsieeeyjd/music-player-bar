@@ -522,7 +522,7 @@ function showConsoleCredit(opts = {}) {
   const style = 'background:#8b5cf6;color:#fff;padding:2px 8px;border-radius:8px;font-weight:600';
   const msg   = `by elsie — MIT — ${URL}`;
 
-  console.info(`${credStart}%c${tag}%c ${msg} ${URL}`, style, '');
+  console.info(`${credStart}%c${tag}%c ${msg}`, style, '');
 }
 
 

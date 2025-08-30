@@ -11,17 +11,19 @@ document.addEventListener("DOMContentLoaded", () => {
   initPlayerUI(); // query elements & attach listeners
 });
 
+
+//if you want any parts of the playlist to look differently, change it in the section below 
 const playerHTML = `
           <button id="prev" aria-label="Previous">⏮</button>
           <button id="play" aria-label="Play/Pause">▶</button>
           <button id="next" aria-label="Next">⏭</button>
           <button id="shuffle" aria-label="Shuffle">🔀</button>
           <button id="repeat" aria-label="Repeat">🔁</button>
-          //if you want to have different looking buttons, just change the html content above
+          
           
           <div class="track">
             <div class="title-wrap">
-              <div class="title" id="title" style="font-family: 'VT323';">-</div>
+              <div class="title" id="title">-</div>
             </div>
             
             <div class="progress" id="progress">
@@ -45,6 +47,11 @@ function mountPlayer(opts={}) {
   root.innerHTML = playerHTML;
 }
 
+//IMPORTANT, LOOK HERE! 
+//the below section is to make sure that this player can work on every page on your website, not just the root pages! 
+//to make it work for your site simply change the name of the folders in path.includes. 
+//for example, if you have sub pages, put it in the path.includes above rootPath="../", sub sub pages and then you put it above rootPath="../../", so on and so forth.
+
 function initPlayerUI(opts={}) {
 
   showConsoleCredit(opts);
@@ -52,15 +59,15 @@ function initPlayerUI(opts={}) {
   let path = window.location.pathname;
 
   let rootPath = "";
-  if(
+  if( //sub sub sub pages
     path.includes("extra/mediarec/")
   ) {
     rootPath = "../../../"; 
-  } else if (
+  } else if ( //sub sub pages
     path.includes("blog/posts/") 
   ) {
     rootPath = "../../";
-  } else if (
+  } else if ( //sub pages
     path.includes("blog/") ||
     path.includes("artworks/") ||
     path.includes("about/") ||

@@ -42,6 +42,14 @@ to add songs to your playlist, just copy and paste the rows and fill out the inf
 If you have neocities supporter/if your web host allow you host mp3 (idk if nekoweb does but yeah), the "src" part can just be a direct path to said mp3 file. 
 However, if you're using neocities free/if your web host doesn't allow you to host mp3 files, you can just link it from other file hosting services like github (what i'm using) or catbox.moe, and paste the url. 
 
+# More important stuff
+Before your music player can work, you need to go to your script.js file and go to this part of the code in the screenshot. 
+<img width="958" height="506" alt="Screenshot 2025-08-30 at 5 18 03 PM" src="https://github.com/user-attachments/assets/45cf42e8-2b84-472a-ab51-2212c33de78f" />
+
+There are some lines of codes that needs to be changed in order for the player to work for your site, and once you go there there will be comments telling you what to do. 
+
+<b>REMEMBER TO DO THIS OR ELSE THE PLAYER WLL PROBABLY NOT WORK ON YOUR SITE</b>
+
 # making things pretty 
 The playlist's default look is lilac. In case that's not your cup of tea, you can customize directly from style.css! 
 
@@ -62,6 +70,13 @@ but if you can't be bothered, I also have a few presets that may interest you <a
 
 <b>French 🇫🇷 (wait what?)</b>
 <img width="1265" height="55" alt="Screenshot 2025-08-17 at 1 51 49 AM" src="https://github.com/user-attachments/assets/21b7e75d-9973-429d-81c5-083d29acd0a8" />
+
+# Got problems? 
+Contact me if you've run into any problems/got bugs to report! 
+
+Reddit: <a href='https://www.reddit.com/user/Blueberry0410/' target='_blank'>u/Blueberry0410</a>
+
+Email: <a href='mailto:elsieyjd@gmail.com' target='_blank'>elsieyjd@gmail.com</a>
 
 
 # lisense

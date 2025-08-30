@@ -1,7 +1,7 @@
 # lil music player bar thing
 ![downloads](https://img.shields.io/github/downloads/elsieeeyjd/music-player-bar/total)
 
-<b>Download <a href="https://github.com/elsieeeyjd/music-player-bar/releases/tag/v1.0.0">HERE</b>
+<b>Download <a href="https://github.com/elsieeeyjd/music-player-bar/releases/tag/v1.0.1">HERE</b>
 
 <img width="1264" height="53" alt="Screenshot 2025-08-17 at 1 57 15 AM" src="https://github.com/user-attachments/assets/3dcc09e1-32cf-41d5-a221-b23ccd420688" />
 

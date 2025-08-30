@@ -47,16 +47,17 @@ function mountPlayer(opts={}) {
   root.innerHTML = playerHTML;
 }
 
-//IMPORTANT, LOOK HERE! 
-//the below section is to make sure that this player can work on every page on your website, not just the root pages! 
-//to make it work for your site simply change the name of the folders in path.includes. 
-//for example, if you have sub pages, put it in the path.includes above rootPath="../", sub sub pages and then you put it above rootPath="../../", so on and so forth.
 
 function initPlayerUI(opts={}) {
 
   showConsoleCredit(opts);
   
   let path = window.location.pathname;
+
+//IMPORTANT, LOOK HERE! 
+//the below section is to make sure that this player can work on every page on your website, not just the root pages! 
+//to make it work for your site simply change the name of the folders in path.includes. 
+//for example, if you have sub pages, put it in the path.includes above rootPath="../", sub sub pages and then you put it above rootPath="../../", so on and so forth.
 
   let rootPath = "";
   if( //sub sub sub pages
